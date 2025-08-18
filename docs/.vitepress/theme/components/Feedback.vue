@@ -213,51 +213,7 @@ const toggleCard = () => (isCardShown.value = !isCardShown.value)
           </div>
           <p class="heading" v-text="message"></p>
           <div v-if="feedback.type === 'suggestion'" class="mb-2 text-sm">
-            <details>
-              <summary>
-                <span class="ii-lucide-shield-x bg-cerise-400 mb-1 ml-1" />
-                Do not submit any of the following:
-              </summary>
-              <strong>🕹️ Emulators</strong>
-              <p class="desc">
-                They're already on the
-                <a
-                  class="text-primary text-underline font-bold"
-                  href="https://emulation.gametechwiki.com/index.php/Main_Page"
-                >
-                  Game Tech Wiki.
-                </a>
-              </p>
-              <strong>🔻 Leeches</strong>
-              <p class="desc">
-                They're already on the
-                <a
-                  class="text-primary text-underline font-bold"
-                  href="https://filehostlist.miraheze.org/wiki/Free_Premium_Leeches"
-                >
-                  File Hosting Wiki.
-                </a>
-              </p>
-              <strong>🐧 Distros</strong>
-              <p class="desc">
-                They're already on
-                <a
-                  class="text-primary text-underline font-bold"
-                  href="https://distrowatch.com/"
-                >
-                  DistroWatch.
-                </a>
-              </p>
-              <strong>🎲 Mining / Betting Sites</strong>
-              <p class="desc">
-                Don't post anything related to betting, mining, BINs, CCs, etc.
-              </p>
-              <strong>🎮 Multiplayer Game Hacks</strong>
-              <p class="desc">
-                Don't post any hacks/exploits that give unfair advantages in
-                multiplayer games.
-              </p>
-            </details>
+            <p>Please read the <a href="/other/contributing">Contribute Guide</a> before submitting your feedback!</p>
           </div>
           <textarea
             v-model="feedback.message"
@@ -266,10 +222,11 @@ const toggleCard = () => (isCardShown.value = !isCardShown.value)
             placeholder="What a lovely wiki!"
           />
           <p class="desc mb-2">
-            Add your Discord handle if you would like a response, or if we need more information from you, otherwise join our
+            Add your Discord handle if you would like a response, or if we need
+            more information from you, otherwise join our
             <a
               class="text-primary text-underline font-semibold"
-              href="https://rentry.co/FMHY-Invite/"
+              href="https://github.com/fmhy/FMHY/wiki/FMHY-Discord"
             >
               Discord.
             </a>

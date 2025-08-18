@@ -129,7 +129,7 @@ export const search: DefaultTheme.Config['search'] = {
 
 export const socialLinks: DefaultTheme.SocialLink[] = [
   { icon: 'github', link: 'https://github.com/fmhy/edit' },
-  { icon: 'discord', link: 'https://rentry.co/fmhy-invite' },
+  { icon: 'discord', link: 'https://github.com/fmhy/FMHY/wiki/FMHY-Discord' },
   {
     icon: 'reddit',
     link: 'https://reddit.com/r/FREEMEDIAHECKYEAH'
@@ -152,8 +152,12 @@ export const nav: DefaultTheme.NavItem[] = [
       { text: '🌐 Search', link: '/posts/search' },
       { text: '🔖 Bookmarks', link: 'https://github.com/fmhy/bookmarks' },
       { text: '✅ SafeGuard', link: 'https://github.com/fmhy/FMHY-SafeGuard' },
+      { text: '🚀 Startpage', link: 'https://fmhy.net/startpage' },
       { text: '📋 snowbin', link: 'https://pastes.fmhy.net' },
-      { text: '®️ Redlib', link: 'https://redlib.fmhy.net/r/FREEMEDIAHECKYEAH/wiki/index' },
+      {
+        text: '®️ Redlib',
+        link: 'https://redlib.fmhy.net/r/FREEMEDIAHECKYEAH/wiki/index'
+      },
       { text: '🔎 SearXNG', link: 'https://searx.fmhy.net/' },
       {
         text: '💡 Site Hunting',
@@ -162,7 +166,7 @@ export const nav: DefaultTheme.NavItem[] = [
       { text: '❓ FAQs', link: 'https://redd.it/xrxen7' },
       {
         text: '😇 SFW FMHY',
-        link: 'https://fmhy.xyz/'
+        link: 'https://rentry.org/piracy'
       },
       {
         text: '🏠 Selfhosting',
@@ -302,7 +306,7 @@ export const sidebar: DefaultTheme.Sidebar | DefaultTheme.NavItemWithLink[] = [
       meta.build.nsfw
         ? {
             text: '<span class="i-twemoji:no-one-under-eighteen"></span> NSFW',
-            link: 'https://rentry.co/NSFW-Checkpoint'
+            link: 'https://rentry.org/NSFW-Checkpoint'
           }
         : {},
       {
